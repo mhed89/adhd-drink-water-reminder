@@ -1,0 +1,36 @@
+# CircuitPython specific
+.Trashes
+.metadata_never_index
+.fseventsd
+boot_out.txt
+lib/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# OS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Project specific
+*.uf2
