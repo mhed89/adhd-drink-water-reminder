@@ -75,3 +75,5 @@ To quickly test functionality, use the included `test_accelerated.py`:
 - **Blue/Cyan alternating**: Time to drink water
 - **Green flashes**: Button press confirmed, timer reset
 - **Red → Green → Blue sequence**: System startup check
+
+![image of the breadboard and wiring](/images/front.jpeg)
