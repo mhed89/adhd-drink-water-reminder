@@ -1,71 +1,68 @@
-# Water Reminder System aimed at forgetful ADHD brains
+# Water Reminder for XIAO RP2040
 
-A CircuitPython-based water reminder that uses an RGB LED to remind you to drink water every hour. Press a button after drinking water to reset the timer and track your daily water intake.
+This CircuitPython project helps you remember to drink water using an RGB LED and a button on a Seeed Studio XIAO RP2040.
 
-## Components
+## What it does
 
-- Seeed Studio XIAO RP2040 microcontroller
-- KY-009 RGB LED module
-- KY-004 Button module
-- Small breadboard
-- Jumper wires
+- Blinks an LED every hour as a reminder.
+- Press the button after drinking to reset the timer and count your water intake.
+
+## Parts Needed
+
+- Seeed Studio XIAO RP2040
+- KY-009 RGB LED
+- KY-004 Button
+- Breadboard & Jumper Wires
 
 ## Wiring
 
-Connect components to your XIAO RP2040 as follows:
+| XIAO Pin | Connects To           |
+|----------|-----------------------|
+| D0       | KY-009 R (Red)        |
+| D1       | KY-009 G (Green)      |
+| D2       | KY-009 B (Blue)       |
+| D3       | KY-004 S (Signal)     |
+| 3.3V     | KY-004 VCC (+)        |
+| GND      | Common Ground (-)     |
 
-| XIAO RP2040 Pin | Component Connection          |
-|-----------------|-------------------------------|
-| D0              | KY-009 R (Red) pin            |
-| D1              | KY-009 G (Green) pin          |
-| D2              | KY-009 B (Blue) pin           |
-| D3              | KY-004 S (Signal) pin         |
-| 3.3V            | KY-004 VCC pin                |
-| GND             | Common ground (breadboard)    |
+*Tip:* Use a breadboard to share the GND connection between the XIAO, LED, and button.
 
-### Ground Sharing (Breadboard Setup)
+## Setup
 
-Since the XIAO has limited ground pins, use a breadboard to create a common ground:
-1. Connect GND from XIAO to breadboard
-2. Connect GND from KY-009 to same breadboard row
-3. Connect GND from KY-004 to same breadboard row
+1.  **Install CircuitPython:** Put CircuitPython on your XIAO RP2040 if you haven't already ([Seeed Studio Guide](https://wiki.seeedstudio.com/XIAO-RP2040-with-CircuitPython/)).
+2.  **Connect:** Plug the XIAO into your computer.
+3.  **Copy Code:** Drag `code.py` onto the `CIRCUITPY` drive that appears.
+4.  **Run:** It starts automatically!
 
-## Installation
+## How to Use
 
-1. Install CircuitPython on your XIAO RP2040 if not already installed ([guide](https://wiki.seeedstudio.com/XIAO-RP2040-with-CircuitPython/))
-2. Connect the board to your computer
-3. Copy the `code.py` file to the root directory of the CircuitPython drive that appears
-4. The program will start automatically
+- **Startup:** You'll see a quick Red-Green-Blue flash sequence.
+- **Reminder:** Every hour, the LED blinks blue/cyan for one minute. Time to drink!
+- **Button Press:** After drinking, press the button.
+    - The timer resets for another hour.
+    - Your water count goes up by one (check the serial console if connected).
+    - The LED flashes green a few times to confirm.
 
-## Usage
+## Customize
 
-- The system starts with a RGB test sequence
-- Every hour, the LED will blink blue/cyan for 1 minute to remind you to drink water
-- Press the button after drinking water to:
-  - Reset the timer
-  - Add 1 to your water count
-  - Get green confirmation flashes
-
-## Customization
-
-Edit these values in the code to customize behavior:
+You can change the timing in `code.py`:
 
 ```python
-REMINDER_INTERVAL = 60 * 60  # Seconds between reminders (default: 1 hour)
-REMINDER_DURATION = 60       # How long each reminder lasts (default: 1 minute)
+REMINDER_INTERVAL = 60 * 60  # How often to remind (seconds). Default: 1 hour
+REMINDER_DURATION = 60       # How long the reminder blink lasts (seconds). Default: 1 minute
 ```
 
-## Testing Mode
+## Quick Test Mode
 
-To quickly test functionality, use the included `test_accelerated.py`:
-1. Rename `test_accelerated.py` to `code.py`
-2. Upload to your device
-3. This version uses 10-second intervals and 5-second reminders
+Want to test it faster?
+1. Rename `test_accelerated.py` to `code.py`.
+2. Copy it to your XIAO.
+This version uses a 10-second interval and a 5-second reminder blink.
 
-## Color Meanings
+## LED Colors
 
-- **Blue/Cyan alternating**: Time to drink water
-- **Green flashes**: Button press confirmed, timer reset
-- **Red → Green → Blue sequence**: System startup check
+- **Blue/Cyan Blink:** Drink water reminder.
+- **Green Flashes:** Button pressed, timer reset.
+- **Red -> Green -> Blue:** System starting up.
 
-![image of the breadboard and wiring](/images/front.jpeg)
+![Photo of the setup](/images/front.jpeg)
