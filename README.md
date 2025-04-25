@@ -1,4 +1,4 @@
-# Water Reminder System
+# Water Reminder System aimed at forgetful ADHD brains
 
 A CircuitPython-based water reminder that uses an RGB LED to remind you to drink water every hour. Press a button after drinking water to reset the timer and track your daily water intake.
 
