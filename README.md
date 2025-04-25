@@ -1,6 +1,6 @@
 # Water Reminder System
 
-A CircuitPython-based water reminder that uses an RGB LED to remind you to drink water every hour. Press a button after drinking water to reset the timer and track your daily water intake. Plug it in to your computer/power supply, and have it beside you while working or studying.
+A CircuitPython-based water reminder that uses an RGB LED to remind you to drink water every hour. Press a button after drinking water to reset the timer and track your daily water intake.
 
 ## Components
 
@@ -9,14 +9,6 @@ A CircuitPython-based water reminder that uses an RGB LED to remind you to drink
 - KY-004 Button module
 - Small breadboard
 - Jumper wires
-
-## Features
-
-- 🚰 Hourly water intake reminders
-- 🔵 Visual reminders using blue/cyan LED pattern
-- ✅ Button to log each glass of water consumed
-- 🧮 Tracks daily water intake count
-- 📊 Serial console output for monitoring
 
 ## Wiring
 
