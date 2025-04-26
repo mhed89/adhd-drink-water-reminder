@@ -25,8 +25,6 @@ This CircuitPython project helps you remember to drink water using an RGB LED an
 | 3.3V     | KY-004 VCC (+)        |
 | GND      | Common Ground (-)     |
 
-*Tip:* Use a breadboard to share the GND connection between the XIAO, LED, and button.
-
 ## Setup
 
 1.  **Install CircuitPython:** Put CircuitPython on your XIAO RP2040 if you haven't already ([Seeed Studio Guide](https://wiki.seeedstudio.com/XIAO-RP2040-with-CircuitPython/)).
