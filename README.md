@@ -25,13 +25,6 @@ This CircuitPython project helps you remember to drink water using an RGB LED an
 | 3.3V     | KY-004 VCC (+)        |
 | GND      | Common Ground (-)     |
 
-## Setup
-
-1.  **Install CircuitPython:** Put CircuitPython on your XIAO RP2040 if you haven't already ([Seeed Studio Guide](https://wiki.seeedstudio.com/XIAO-RP2040-with-CircuitPython/)).
-2.  **Connect:** Plug the XIAO into your computer.
-3.  **Copy Code:** Drag `code.py` onto the `CIRCUITPY` drive that appears.
-4.  **Run:** It starts automatically!
-
 ## How to Use
 
 - **Startup:** You'll see a quick Red-Green-Blue flash sequence.
