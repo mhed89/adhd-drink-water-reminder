@@ -56,4 +56,8 @@ This version uses a 10-second interval and a 5-second reminder blink.
 - **Green Flashes:** Button pressed, timer reset.
 - **Red -> Green -> Blue:** System starting up.
 
-![Photo of the setup](/images/front.jpeg)
+![front](https://github.com/user-attachments/assets/bc494fd3-966d-4f9d-ab85-cfc011c557a3)
+
+
+![IMG_0720](https://github.com/user-attachments/assets/71ecfe45-1037-492c-9556-2ec6ac387dc0)
+
