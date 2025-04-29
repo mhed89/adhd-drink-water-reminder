@@ -1,5 +1,5 @@
 # Water Reminder System
-# For Seeed Studio XIAO RP2040 with KY-009 RGB LED and KY-004 Button
+# For Seeed Studio XIAO RP2040 with KY-009 RGB LED and KY-004 Button (6mm x 6mm tactile button on the soldered version)
 # Reminds you to drink water every hour with customizable visual alerts
 # Author: mhed89
 # Created: 2025-04-24
